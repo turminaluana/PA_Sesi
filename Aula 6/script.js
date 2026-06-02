@@ -7,18 +7,34 @@ const nome = "Pietro"  //não muda
 
 console.log("O " + nome + " é aluno do sesi")
 
-console.log(aluno_var)
-
-aluno_var = "Vinicios"
-
-console.log(aluno_var)
-
 let frutas = ["Maçã", "Uva", "Pêra"]
 
-console.log(frutas.length)
+console.log(frutas, frutas.length)
 
-let nomes = { 
-    id: 1,
-    nome: "Brasil",
-    senha: 123
+let alunos = [
+    {
+        id: 1,
+        nome: "murilo",
+        sobrenome: "chaves"
+    },
+    {
+        id: 2,
+        nome:"vinicius",
+        sobrenome: "lima"
+    },
+    {
+        id: 3,
+        nome: "Davi",
+        sobrenome: "Ferrari"
+    }   
+]
+
+console.log(alunos[2].nome)
+
+
+function soma(n1, n2){
+    return n1 + n2
 }
+
+console.log(soma(10,20))
+console.log(soma(50,30))
