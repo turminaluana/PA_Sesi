@@ -1,6 +1,7 @@
-let mensagem = document.querySelector('#mensagem')
+let form = document.querySelector('#formulario')
 
-function exibir() {
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
     let nome = document.querySelector('#nome').value
     let sobrenome = document.querySelector('#sobrenome').value
     let idade = document.querySelector('#idade').value
@@ -11,5 +12,8 @@ function exibir() {
         return;
     }
 
-    mensagem.innerHTML = ` ${nome} ${sobrenome}, você tem ${idade} anos e trabalha como ${profissao}`
-}
+    let resposta = document.querySelector('#resposta')
+
+    resposta.innerHTML = `Bem vindo ${nome} ${sobrenome}, você tem ${idade} anos e trabalha como ${profissao}`
+
+})
